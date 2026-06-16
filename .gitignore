@@ -1,0 +1,196 @@
+{
+  "annotations": {
+    "architecture": "arm64",
+    "engine_name": "ooniprobe-engine",
+    "engine_version": "3.29.0",
+    "flavor": "ooniprobe-android-unattended",
+    "go_version": "go1.24.12",
+    "installer_store": "",
+    "network_type": "wifi",
+    "ooni_run_link_id": "",
+    "origin": "autorun",
+    "os_version": "36",
+    "platform": "android",
+    "vcs_modified": "",
+    "vcs_revision": "",
+    "vcs_time": "",
+    "vcs_tool": ""
+  },
+  "data_format_version": "0.2.0",
+  "input": "http://opendata.mx/",
+  "measurement_start_time": "2026-06-16 02:54:46",
+  "probe_asn": "AS11888",
+  "probe_cc": "MX",
+  "probe_ip": "127.0.0.1",
+  "probe_network_name": "Television Internacional, S.A. de C.V.",
+  "report_id": "20260616T025533Z_webconnectivity_MX_11888_n4_RbTBR0rF0eY1abnw",
+  "resolver_asn": "AS11888",
+  "resolver_ip": "187.160.252.114",
+  "resolver_network_name": "Television Internacional, S.A. de C.V.",
+  "software_name": "ooniprobe-android-unattended",
+  "software_version": "6.0.2",
+  "test_helpers": {
+    "backend": {
+      "address": "https://6.th.ooni.org",
+      "type": "https"
+    }
+  },
+  "test_keys": {
+    "accessible": false,
+    "agent": "redirect",
+    "blocking": "tcp_ip",
+    "body_length_match": null,
+    "body_proportion": 0,
+    "client_resolver": "187.160.252.114",
+    "control": {
+      "dns": {
+        "addrs": [
+          "34.206.143.76"
+        ],
+        "failure": null
+      },
+      "http3_request": null,
+      "http_request": {
+        "body_length": -1,
+        "discovered_h3_endpoint": "",
+        "failure": "generic_timeout_error",
+        "headers": {},
+        "status_code": -1,
+        "title": ""
+      },
+      "ip_info": {
+        "34.206.143.76": {
+          "asn": 14618,
+          "flags": 3
+        }
+      },
+      "quic_handshake": {},
+      "tcp_connect": {
+        "34.206.143.76:443": {
+          "failure": "generic_timeout_error",
+          "status": false
+        },
+        "34.206.143.76:80": {
+          "failure": "generic_timeout_error",
+          "status": false
+        }
+      }
+    },
+    "control_failure": null,
+    "dns_consistency": "consistent",
+    "dns_experiment_failure": null,
+    "headers_match": null,
+    "http_experiment_failure": "generic_timeout_error",
+    "network_events": [
+      {
+        "address": "34.206.143.76:80",
+        "failure": "generic_timeout_error",
+        "operation": "connect",
+        "proto": "tcp",
+        "t": 30.376782387,
+        "tags": [
+          "tcptls_experiment"
+        ]
+      }
+    ],
+    "queries": [
+      {
+        "answers": [
+          {
+            "answer_type": "A",
+            "as_org_name": "Amazon.com, Inc.",
+            "asn": 14618,
+            "ipv4": "34.206.143.76",
+            "ttl": null
+          }
+        ],
+        "engine": "system",
+        "failure": null,
+        "hostname": "opendata.mx",
+        "query_type": "A",
+        "resolver_address": "",
+        "resolver_hostname": null,
+        "resolver_port": null,
+        "t": 0.149931923,
+        "tags": null
+      }
+    ],
+    "requests": [
+      {
+        "failure": "generic_timeout_error",
+        "request": {
+          "body": "",
+          "body_is_truncated": false,
+          "headers": {
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Host": "opendata.mx",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.10 Safari/605.1.1"
+          },
+          "headers_list": [
+            [
+              "Accept",
+              "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+            ],
+            [
+              "Accept-Language",
+              "en-US,en;q=0.9"
+            ],
+            [
+              "Host",
+              "opendata.mx"
+            ],
+            [
+              "User-Agent",
+              "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.10 Safari/605.1.1"
+            ]
+          ],
+          "method": "GET",
+          "tor": {
+            "exit_ip": null,
+            "exit_name": null,
+            "is_tor": false
+          },
+          "url": "http://opendata.mx/",
+          "x_transport": "tcp"
+        },
+        "response": {
+          "body": "",
+          "body_is_truncated": false,
+          "code": 0,
+          "headers": {},
+          "headers_list": []
+        },
+        "t": 45.446900926,
+        "tags": null
+      }
+    ],
+    "retries": null,
+    "socksproxy": null,
+    "status_code_match": null,
+    "tcp_connect": [
+      {
+        "ip": "34.206.143.76",
+        "port": 80,
+        "status": {
+          "blocked": false,
+          "failure": "generic_timeout_error",
+          "success": false
+        },
+        "t": 30.376782387,
+        "tags": null
+      }
+    ],
+    "title_match": null,
+    "tls_handshakes": null,
+    "x_dns_runtime": 151623000,
+    "x_http_runtime": 15058470078,
+    "x_status": 4224,
+    "x_tcptls_runtime": 15038713539,
+    "x_th_runtime": 15203287077
+  },
+  "test_name": "web_connectivity",
+  "test_runtime": 45.457325542,
+  "test_start_time": "2026-06-16 02:53:55",
+  "test_version": "0.4.3"
+}
